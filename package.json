@@ -1,0 +1,40 @@
+{
+  "name": "react-observable-class",
+  "version": "1.0.0",
+  "description": "React state management using classes. Similar to MobX but reduced to the core features.",
+  "repository": "https://github.com/JeremyRH/react-observable-class.git",
+  "author": "JeremyRH <holcomb227@gmail.com>",
+  "license": "MIT",
+  "files": ["dist"],
+  "main": "dist/cjs/index.js",
+  "module": "dist/es/index.js",
+  "types": "dist/es/index.d.ts",
+  "peerDependencies": {
+    "@types/react": ">= 16.8",
+    "react": ">= 16.8"
+  },
+  "peerDependenciesMeta": {
+    "@types/react": {
+      "optional": true
+    }
+  },
+  "devDependencies": {
+    "@babel/core": "^7.20.12",
+    "@babel/preset-env": "^7.20.2",
+    "@babel/preset-react": "^7.18.6",
+    "@babel/preset-typescript": "^7.18.6",
+    "@testing-library/react": "^14.0.0",
+    "@types/jest": "^29.4.0",
+    "@types/react": "^18.0.28",
+    "jest": "^29.4.3",
+    "jest-environment-jsdom": "^29.4.3",
+    "prettier": "^2.8.4",
+    "react": "^18.2.0",
+    "typescript": "^4.9.5"
+  },
+  "scripts": {
+    "build": "tsc --outDir dist/es --module esnext && tsc --outDir dist/cjs --module commonjs --declaration false",
+    "format": "prettier src --write",
+    "test": "jest src --env=jsdom"
+  }
+}
