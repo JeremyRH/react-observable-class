@@ -13,8 +13,7 @@ jobs:
       - uses: google-github-actions/release-please-action@v3
         id: release
         with:
-          release-type: node
-          package-name: react-observable-class
+          command: manifest
 
       - uses: actions/checkout@v3
 
