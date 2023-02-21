@@ -1,11 +1,13 @@
 {
   "name": "react-observable-class",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "React state management using classes. Similar to MobX but reduced to the core features.",
   "repository": "https://github.com/JeremyRH/react-observable-class.git",
   "author": "JeremyRH <holcomb227@gmail.com>",
   "license": "MIT",
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "main": "dist/cjs/index.js",
   "module": "dist/es/index.js",
   "types": "dist/es/index.d.ts",
