@@ -16,8 +16,7 @@ npm install react-observable-class
 
 ```ts
 class Observable {
-  [observersKey]: Set<() => any>;
-  constructor();
+  [symbol]: Set<() => any>;
 }
 ```
 
